@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviceLoop | بيع جهاز</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DeviceLoop</h1>
+        <p>منصة لبيع وشراء الأجهزة الإلكترونية المستعملة</p>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="devices.html">تصفح الأجهزة</a>
+            <a href="sell.html">بيع جهاز</a>
+            <a href="index.html">تسجيل الدخول</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>بيع جهاز</h2>
+            <p>أدخل بيانات الجهاز الذي تريد عرضه للبيع على DeviceLoop.</p>
+
+            <form>
+
+                <h3>بيانات البائع</h3>
+
+                <label for="seller-name">اسم البائع:</label>
+                <input type="text" id="seller-name" name="seller-name">
+
+                <br><br>
+
+                <label for="seller-email">البريد الإلكتروني:</label>
+                <input type="email" id="seller-email" name="seller-email">
+
+                <br><br>
+
+                <h3>بيانات الجهاز</h3>
+
+                <label for="device-name">اسم الجهاز:</label>
+                <input type="text" id="device-name" name="device-name">
+
+                <br><br>
+
+                <label for="brand">العلامة التجارية:</label>
+                <input type="text" id="brand" name="brand">
+
+                <br><br>
+
+                <label for="category">الفئة:</label>
+                <select id="category" name="category">
+                    <option>هاتف ذكي</option>
+                    <option>لابتوب</option>
+                    <option>جهاز لوحي</option>
+                    <option>جهاز ألعاب</option>
+                    <option>ساعة ذكية</option>
+                    <option>إكسسوارات</option>
+                </select>
+
+                <br><br>
+
+                <label for="condition">الحالة:</label>
+                <select id="condition" name="condition">
+                    <option>ممتازة</option>
+                    <option>جيدة جدًا</option>
+                    <option>جيدة</option>
+                    <option>مقبولة</option>
+                </select>
+
+                <br><br>
+
+                <label for="price">السعر:</label>
+                <input type="number" id="price" name="price">
+
+                <br><br>
+
+                <label for="description">وصف الجهاز:</label>
+                <br>
+                <textarea id="description" name="description" rows="6" cols="40"></textarea>
+
+                <br><br>
+
+                <button type="submit">عرض الجهاز للبيع</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 DeviceLoop</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeviceLoop | تواصل معنا</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>DeviceLoop</h1>
+        <p>منصة لبيع وشراء الأجهزة الإلكترونية المستعملة</p>
+
+        <nav>
+            <a href="home.html">الرئيسية</a>
+            <a href="devices.html">تصفح الأجهزة</a>
+            <a href="sell.html">بيع جهاز</a>
+            <a href="index.html">تسجيل الدخول</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>تواصل معنا</h2>
+
+            <p>
+                إذا كان لديك استفسار أو شكوى أو اقتراح،
+                يمكنك التواصل معنا من خلال النموذج التالي.
+            </p>
+
+            <p> رقم التواصل: 0912345678</p>
+
+            <form>
+
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="message-type">نوع الرسالة:</label>
+                <select id="message-type" name="message-type" required>
+                    <option value="">اختر نوع الرسالة</option>
+                    <option value="inquiry">استفسار</option>
+                    <option value="complaint">شكوى</option>
+                    <option value="suggestion">اقتراح</option>
+                    <option value="other">أخرى</option>
+                </select>
+
+                <br><br>
+
+                <label for="message">الرسالة:</label>
+                <br>
+                <textarea id="message" name="message"
+                          rows="7" cols="40" required></textarea>
+
+                <br><br>
+
+                <button type="submit">إرسال الرسالة</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026 DeviceLoop</p>
+    </footer>
+
+</body>
+
+</html>
