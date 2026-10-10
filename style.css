@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #1f2937;
+    direction: rtl;
+}
+
+/* رأس الموقع */
+
+header {
+    background-color: #0f172a;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 10px 0 20px;
+}
+
+/* شريط التنقل */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 12px;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #2563eb;
+}
+
+/* المحتوى الرئيسي */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* الأقسام */
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #0f172a;
+}
+
+/* النماذج */
+
+form {
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+/* مربع تذكرني */
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+/* الأزرار */
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* الروابط داخل المحتوى */
+
+main a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* تذييل الموقع */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+.auth-section {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.auth-section form {
+    max-width: 100%;
+}
+
+.auth-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+
+}/* صفحات النماذج */
+
+.form-section {
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.form-section form {
+    max-width: 100%;
+}
+
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* بطاقات الأجهزة */
+
+article {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 18px 0;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #0f172a;
+    font-size: 22px;
+}
+
+article p {
+    line-height: 1.8;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 8px;
+    background-color: #2563eb;
+    color: white;
+    padding: 9px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+article a:hover {
+    background-color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* القوائم */
+
+ul,
+ol {
+    line-height: 2;
+    padding-right: 25px;
+}
+
+/* الفواصل في صفحة التفاصيل */
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 30px 0;
+}
+
+/* ترتيب بطاقات الأجهزة */
+
+.devices-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.devices-section > h2 {
+    grid-column: 1 / -1;
+}
+
+.devices-section article {
+    margin: 0;
+    height: 100%;
+}
+
+/* التصميم المتجاوب */
+
+@media (max-width: 900px) {
+    .devices-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        display: block;
+        margin: 6px 0;
+    }
+
+    main {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .devices-section {
+        grid-template-columns: 1fr;
+    }
+
+    .auth-section,
+    .form-section {
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 15px;
+    }
+}
+
+/* فئات الأجهزة */
+
+.categories-section ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.categories-section li {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* كيف تعمل المنصة */
+
+.steps-section ol {
+    padding-right: 25px;
+}
+
+.steps-section li {
+    background-color: #f8fafc;
+    border-right: 4px solid #2563eb;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+/* للجوال */
+
+@media (max-width: 600px) {
+    .categories-section ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* تحسين العناوين والمسافات */
+
+h2 {
+    line-height: 1.4;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* تحسين التذييل */
+
+footer {
+    margin-top: 30px;
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 22px;
+}
+
+/* حركة بسيطة للبطاقات */
+
+article,
+.categories-section li {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover,
+.categories-section li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+/* تحسين الأزرار */
+
+button,
+article a {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover,
+article a:hover {
+    transform: translateY(-2px);
+}
+
+/* صفحة تفاصيل الأجهزة */
+
+.details-card {
+    max-width: 850px;
+    margin: 0 auto 25px;
+}
+
+.details-card h2 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.details-card p,
+.details-card li {
+    line-height: 1.9;
+}
