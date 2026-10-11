@@ -14,6 +14,10 @@
         <h1>DeviceLoop</h1>
         <p>منصة لبيع وشراء الأجهزة الإلكترونية المستعملة</p>
 
+<button id="menu-toggle" class="menu-toggle" type="button">
+    ☰
+</button>
+
         <nav>
             <a href="home.html">الرئيسية</a>
             <a href="devices.html">تصفح الأجهزة</a>
@@ -29,7 +33,7 @@
             <h2>بيع جهاز</h2>
             <p>أدخل بيانات الجهاز الذي تريد عرضه للبيع على DeviceLoop.</p>
 
-            <form>
+            <form id="sell-form">
 
                 <h3>بيانات البائع</h3>
 
@@ -57,6 +61,7 @@
 
                 <label for="category">الفئة:</label>
                 <select id="category" name="category">
+                <option value="">اختر الفئة</option>
                     <option>هاتف ذكي</option>
                     <option>لابتوب</option>
                     <option>جهاز لوحي</option>
@@ -69,6 +74,7 @@
 
                 <label for="condition">الحالة:</label>
                 <select id="condition" name="condition">
+                <option value="">اختر حالة الجهاز</option>
                     <option>ممتازة</option>
                     <option>جيدة جدًا</option>
                     <option>جيدة</option>
@@ -99,6 +105,7 @@
         <p>جميع الحقوق محفوظة © 2026 DeviceLoop</p>
     </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>

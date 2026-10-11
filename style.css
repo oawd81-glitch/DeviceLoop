@@ -380,3 +380,78 @@ article a:hover {
 .details-card li {
     line-height: 1.9;
 }
+
+/* مربع البحث عن الأجهزة */
+
+#device-search {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-weight: bold;
+    color: #64748b;
+    padding: 20px;
+}
+
+/* قائمة تصفية الأجهزة */
+
+#category-filter {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: white;
+    align-self: start;
+}
+
+/* زر قائمة الهاتف */
+
+.menu-toggle {
+    display: none;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* قائمة الهاتف */
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: block;
+        margin: 15px auto 5px;
+    }
+
+    header nav {
+        display: none;
+        margin-top: 10px;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav a {
+        display: block;
+        margin: 6px 0;
+        padding: 10px;
+    }
+}

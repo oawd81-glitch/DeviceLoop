@@ -3,16 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>DeviceLoop | تصفح الأجهزة</title>
-<link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
+
         <h1>DeviceLoop</h1>
+
         <p>منصة لبيع وشراء الأجهزة الإلكترونية المستعملة</p>
+
+<button id="menu-toggle" class="menu-toggle" type="button">
+    ☰
+</button>
 
         <nav>
             <a href="home.html">الرئيسية</a>
@@ -21,79 +33,241 @@
             <a href="index.html">تسجيل الدخول</a>
             <a href="contact.html">تواصل معنا</a>
         </nav>
+
     </header>
+
 
     <main>
 
+        <!-- مقدمة الصفحة -->
+
         <section>
+
             <h2>تصفح الأجهزة</h2>
-            <p>استعرض الأجهزة الإلكترونية المستعملة المعروضة للبيع على DeviceLoop.</p>
+
+            <p>
+                استعرض الأجهزة الإلكترونية المستعملة
+                المعروضة للبيع على DeviceLoop.
+            </p>
+
         </section>
 
+
+        <!-- الأجهزة المتوفرة -->
+
         <section class="devices-section">
+
             <h2>الأجهزة المتوفرة</h2>
 
-            <article>
+
+            <!-- البحث -->
+
+            <input
+                type="search"
+                id="device-search"
+                placeholder="ابحث عن جهاز..."
+            >
+
+
+            <!-- تصفية حسب الفئة -->
+
+            <select id="category-filter">
+
+                <option value="">
+                    جميع الفئات
+                </option>
+
+                <option value="هاتف ذكي">
+                    الهواتف الذكية
+                </option>
+
+                <option value="لابتوب">
+                    أجهزة اللابتوب
+                </option>
+
+                <option value="جهاز لوحي">
+                    الأجهزة اللوحية
+                </option>
+
+                <option value="جهاز ألعاب">
+                    أجهزة الألعاب
+                </option>
+
+                <option value="ساعة ذكية">
+                    الساعات الذكية
+                </option>
+
+            </select>
+
+
+            <!-- تظهر عند عدم وجود نتائج -->
+
+            <p
+                id="no-results"
+                style="display: none;"
+            >
+                لا توجد أجهزة مطابقة للبحث.
+            </p>
+
+
+            <!-- iPhone 13 -->
+
+            <article data-category="هاتف ذكي">
+
                 <h3>iPhone 13</h3>
+
                 <p>الفئة: هاتف ذكي</p>
+
                 <p>الحالة: جيدة</p>
+
                 <p>السعر: 420 دولار</p>
-                <p>هاتف مستعمل بحالة جيدة ومناسب للاستخدام اليومي.</p>
-               <a href="device-details.html#iphone13">عرض التفاصيل</a>
+
+                <p>
+                    هاتف مستعمل بحالة جيدة
+                    ومناسب للاستخدام اليومي.
+                </p>
+
+                <a href="device-details.html#iphone13">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
-            <article>
+
+            <!-- Samsung Galaxy S22 -->
+
+            <article data-category="هاتف ذكي">
+
                 <h3>Samsung Galaxy S22</h3>
+
                 <p>الفئة: هاتف ذكي</p>
+
                 <p>الحالة: جيدة جدًا</p>
+
                 <p>السعر: 390 دولار</p>
-                <p>هاتف سامسونج مستعمل بحالة جيدة جدًا.</p>
-                <a href="device-details.html#samsung-s22">عرض التفاصيل</a>
+
+                <p>
+                    هاتف سامسونج مستعمل
+                    بحالة جيدة جدًا.
+                </p>
+
+                <a href="device-details.html#samsung-s22">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
-            <article>
+
+            <!-- Dell Latitude 5420 -->
+
+            <article data-category="لابتوب">
+
                 <h3>Dell Latitude 5420</h3>
+
                 <p>الفئة: لابتوب</p>
+
                 <p>الحالة: جيدة جدًا</p>
+
                 <p>السعر: 380 دولار</p>
-                <p>لابتوب مناسب للدراسة والعمل والاستخدام اليومي.</p>
-                <a href="device-details.html#dell-5420">عرض التفاصيل</a>
+
+                <p>
+                    لابتوب مناسب للدراسة
+                    والعمل والاستخدام اليومي.
+                </p>
+
+                <a href="device-details.html#dell-5420">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
-            <article>
+
+            <!-- ThinkPad T14 -->
+
+            <article data-category="لابتوب">
+
                 <h3>Lenovo ThinkPad T14</h3>
+
                 <p>الفئة: لابتوب</p>
+
                 <p>الحالة: جيدة</p>
+
                 <p>السعر: 410 دولار</p>
-                <p>جهاز عملي مناسب للعمل والدراسة.</p>
-                <a href="device-details.html#thinkpad-t14">عرض التفاصيل</a>
+
+                <p>
+                    جهاز عملي مناسب للعمل
+                    والدراسة والاستخدام اليومي.
+                </p>
+
+                <a href="device-details.html#thinkpad-t14">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
-            <article>
+
+            <!-- PlayStation 5 -->
+
+            <article data-category="جهاز ألعاب">
+
                 <h3>PlayStation 5</h3>
+
                 <p>الفئة: جهاز ألعاب</p>
+
                 <p>الحالة: ممتازة</p>
+
                 <p>السعر: 450 دولار</p>
-                <p>جهاز ألعاب مستعمل بحالة ممتازة.</p>
-                <a href="device-details.html#ps5">عرض التفاصيل</a>
+
+                <p>
+                    جهاز ألعاب مستعمل
+                    بحالة ممتازة.
+                </p>
+
+                <a href="device-details.html#ps5">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
-            <article>
+
+            <!-- Apple Watch Series 8 -->
+
+            <article data-category="ساعة ذكية">
+
                 <h3>Apple Watch Series 8</h3>
+
                 <p>الفئة: ساعة ذكية</p>
+
                 <p>الحالة: جيدة جدًا</p>
+
                 <p>السعر: 230 دولار</p>
-                <p>ساعة ذكية مستعملة بحالة جيدة جدًا.</p>
-                <a href="device-details.html#apple-watch-8">عرض التفاصيل</a>
+
+                <p>
+                    ساعة ذكية مستعملة
+                    بحالة جيدة جدًا.
+                </p>
+
+                <a href="device-details.html#apple-watch-8">
+                    عرض التفاصيل
+                </a>
+
             </article>
 
         </section>
 
     </main>
 
+
     <footer>
-        <p>جميع الحقوق محفوظة © 2026 DeviceLoop</p>
+
+        <p>
+            جميع الحقوق محفوظة © 2026 DeviceLoop
+        </p>
+
     </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
